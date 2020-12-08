@@ -1,0 +1,51 @@
+categories,scale,difficulty,is_private,passage_part,text,input_mode,answers
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"
+"1,2,3",1,1,TRUE,"<p>first paragraph</p>
+<p>second paragraph</p>",select a,multi-single,"a,test a,true
+b,test b
+c,test c
+d,test d"

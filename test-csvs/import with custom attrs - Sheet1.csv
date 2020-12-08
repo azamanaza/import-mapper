@@ -1,0 +1,3 @@
+team_id,name,phone,email,sticky_phone_number_id,gender,motto
+1,miguel,123,test@example.com,1234,Male,foo baz bar
+2,jane,1234,jane@example.com,12345,Female,baz bar foo 1
