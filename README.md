@@ -16,5 +16,9 @@
 - php artisan serve
 - npm run dev
 
+# Testing
+- go to ./src
+- vendor/bin/phpunit
+
 # Usage
 - You may use the test csv file in ./test-csvs
