@@ -17,7 +17,7 @@ class ImportMapperService {
         return $this->performInserts($rows);
     }
 
-    public function performInserts($rows) {
+    private function performInserts($rows) {
         $results = [];
 
         foreach($rows as $row) {
@@ -30,21 +30,22 @@ class ImportMapperService {
                     $newModel->customAttrs()->create(['key' => $key, 'value' => $value]);
                 }
                 $newModel->fresh();
+                $newModel->load('customAttrs');
             }
             
-            $results[] = $newModel->load('customAttrs')->toArray();
+            $results[] = $newModel->toArray();
         }
 
         return $results;
     }
 
     private function parseCsv($csvFile) {
-        $fileContents = file_get_contents($csvFile->getRealPath());
+        $fileContents = $csvFile->getContent();
 
-        $csv = Reader::createFromString($fileContents);
-        $csv->setHeaderOffset(0);
-        $headers = $csv->getHeader(); //returns the CSV header record
-        $recordsIter = $csv->getRecords($headers);
+        $csvReader = Reader::createFromString($fileContents);
+        $csvReader->setHeaderOffset(0);
+        $headers = $csvReader->getHeader(); //returns the CSV header record
+        $recordsIter = $csvReader->getRecords($headers);
 
         return [
             $headers,
